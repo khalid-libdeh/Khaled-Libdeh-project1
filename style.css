@@ -14,7 +14,7 @@ body {
     color: var(--brand-primary);
 }
 
-header {
+.flex-header {
     display: flex;
     align-items: center;
     background-color: var(--bg-default);
@@ -23,6 +23,13 @@ header {
     padding-inline: 3%;
 
 }
+
+.welcome-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .flex-header {
     display: flex;
@@ -81,7 +88,7 @@ main {
     background-color: white;
     border: solid 1px var(--lines-color);
     overflow: hidden;
-    height: 40vh;
+    height: 42vh;
     border-radius: 10px;
     border: solid 1px var(--lines-color);
 }

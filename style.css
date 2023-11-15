@@ -20,7 +20,7 @@ header {
     background-color: var(--bg-default);
     height: 50px;
     width: 100%;
-    padding-inline: 4%;
+    padding-inline: 3%;
 
 }
 
@@ -60,15 +60,19 @@ header {
 .cards-grid {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
     gap: 30px;
 
+}
+
+.hide-on-mobile{
+    display: none;
 }
 
 main {
     display: flex;
     align-items: center;
-    padding-inline: 4%;
+    padding-inline: 3%;
     margin-top: 20px;
 }
 
@@ -77,27 +81,40 @@ main {
     background-color: white;
     border: solid 1px var(--lines-color);
     overflow: hidden;
-    height: 30vh;
+    height: 40vh;
     border-radius: 10px;
     border: solid 1px var(--lines-color);
 }
 
 .card-img {
-    height: 45%;
+    height: 48%;
     width: 100%;
     object-fit: cover;
 }
 
-.card-info{
-    font-size: 12px;
+.card-info {
+    font-size: 14px;
 }
 
-.card-title{
+.card-title {
     font-weight: 700;
 }
-.card-info{
+
+.card-info {
     display: flex;
     flex-direction: column;
     margin-left: 15px;
     margin-top: 25px;
+}
+
+.rating-stars{
+    margin-top: 30px;
+}
+.star {
+    color: orange !important;
+    font-size: 14px;
+}
+
+.card-author{
+    margin-top: 15px;
 }

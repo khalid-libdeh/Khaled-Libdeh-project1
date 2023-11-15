@@ -1,13 +1,87 @@
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="variables.css" />
     <link href="https://fonts.google.com/specimen/Nunito+Sans" rel="stylesheet" type="text/css" />
+
 </head>
+
 <body>
-    
+    <header>
+        <div class="flex-header">
+            <span class="brand-primary">Web Topics</span>
+            <div class="header-buttons">
+                <span class="header-title"></span>
+                <button class="button dark-button">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span class="hide-on-mobile">Dark Mode</span>
+                </button>
+
+                <button class="button favourites-button">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <span class="hide-on-mobile">Favourites</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cards-grid">
+            <div class="card">
+                <img class="card-img" src="./Logos/html.png" />
+                <div class="card-info">
+                    <span class = "card-type">Web Develompent Languages</span>
+                    <span class = "card-title">HTML</span>
+                    <i class = "card-rating">c</i>
+                    <span class = "card-author"></span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="./Logos/css.webp" />
+                <div class="card-info">
+                    <span class = "card-type">Web Develompent Languages</span>
+                    <span class = "card-title">CSS</span>
+                    <i class = "card-rating">c</i>
+                    <span class = "card-author"></span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="./Logos/javascript.jpg" />
+                <div class="card-info">
+                    <span>a</span>
+                    <span>b</span>
+                    <span>c</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="./Logos/jquery.png" />
+                <div class="card-info">
+                    <span>a</span>
+                    <span>b</span>
+                    <span>c</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="./Logos/jquery.png" />
+                <div class="card-info">
+                    <span>a</span>
+                    <span>b</span>
+                    <span>c</span>
+                </div>
+            </div>
+          
+
+        </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

@@ -40,14 +40,14 @@ body {
 }
 
 .button {
-    
+
     align-items: center;
     background-color: var(--bg-default);
     border-radius: 5px;
     border: solid 1px var(--lines-color);
     height: 30px;
     text-align: center;
-
+    cursor: pointer;
 
 }
 
@@ -78,8 +78,8 @@ body {
     display: none;
 }
 
-.welcome-block{
- 
+.welcome-block {
+    
 }
 
 
@@ -95,18 +95,23 @@ main {
     background-color: white;
     box-shadow: 0 0 5px var(--lines-color);
     overflow: hidden;
-    height: 42vh;
+    height: 41vh;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .card-img {
-    height: 46%;
+    height: 48%;
     width: 100%;
     object-fit: cover;
 }
 
-.card-info {
-    font-size: 14px;
+.card-type {
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
 }
 
 .card-title {
@@ -114,12 +119,18 @@ main {
 }
 
 .card-info {
+    font-size: 14px;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
+    margin-inline: 15px;
     margin-top: 25px;
+
 }
 
+.card-author{
+    font-weight: 200;
+}
 .rating-stars {
     margin-top: 30px;
 }
@@ -141,10 +152,10 @@ main {
     .dark-button {
         width: 6rem;
     }
-    
+
     .favourites-button {
         width: 5.5rem;
     }
 
-    
+
 }

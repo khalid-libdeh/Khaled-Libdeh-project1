@@ -4,41 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="variables.css" />
-    <link href="https://fonts.google.com/specimen/Nunito+Sans" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/dark.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="flex-header">
-            <span class="brand-primary">Web Topics</span>
+            <span class="brand-primary normal web-topics">Web Topics</span>
             <div class="header-buttons">
                 <span class="header-title"></span>
-                <button class="button dark-button">
-                    <ion-icon class= "button-icon" name="moon-outline"></ion-icon>
+                <button id="dark-button" class="button dark-button" onclick="toggleDarkMode()">
+                    <ion-icon class="button-icon" name="moon-outline"></ion-icon>
                     <span class="hide-on-mobile">Dark Mode</span>
                 </button>
 
                 <button class="button favourites-button">
-                    <ion-icon class= "button-icon" name="heart-outline"></ion-icon>
+                    <ion-icon class="button-icon" name="heart-outline"></ion-icon>
                     <span class="hide-on-mobile">Favourites</span>
                 </button>
             </div>
         </div>
 
-        <div class = "welcome-container">
-            <div class = "welcome-block">
-                <h1>Welcome to our website!</h1>
-                <span>we have a new design that's fresh, modern, and easy</span>
+        <div class="welcome-block">
+            <div class="welcome-text">
+                <div class="welcome bold">Welcome to our website!</div>
+                <span>We have a new design that's fresh, modern, and easy</span>
             </div>
-            
+
+
         </div>
     </header>
     <main>
+        <div class="search-bar">
+            <div class=search-box>
+                <ion-icon name="search-outline"></ion-icon>
+                <input type="text" class="search-input" placeholder="Search the website...">
+            </div>
+            <div class="sort-filter">
+                <div class="sort-box">
+                    <button class="sort-filter-button sort-button">
+                        <span class="list-by">Sort by:</span>
+                        <div class=default>
+                            <span>Default</span>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                    </button>
+                </div>
+                <div class="filter-box">
+                    <button class="sort-filter-button filter-button">
+                        <span class="list-by">Filter by:</span>
+                        <div class=default>
+                            <span>Default</span>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
         <div class="cards-grid">
-            <div class="card">
+            <a href="details.html" class="card">
                 <img class="card-img" src="./Logos/html.png" />
                 <div class="card-info">
                     <span class="card-type">Web Develompent Languages</span>
@@ -52,10 +87,10 @@
                     </div>
                     <span class="card-author">Author: Sarah Smith</span>
                 </div>
-            </div>
+            </a>
 
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/css.webp" />
                 <div class="card-info">
                     <span class="card-type">Web Develompent Languages</span>
@@ -69,9 +104,9 @@
                     </div>
                     <span class="card-author">Author: David Lee</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/javascript.jpg" />
                 <div class="card-info">
                     <span class="card-type">Web Develompent Languages</span>
@@ -85,9 +120,9 @@
                     </div>
                     <span class="card-author">Author: Emily Chen</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/jquery.png" />
                 <div class="card-info">
                     <span class="card-type">Frontend Frameworks and Libraries</span>
@@ -101,9 +136,9 @@
                     </div>
                     <span class="card-author">Author: John Johnson</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/angular.png" />
                 <div class="card-info">
                     <span class="card-type">Frontend Frameworks and Libraries</span>
@@ -117,10 +152,10 @@
                     </div>
                     <span class="card-author">Author: Jessica Davis</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
-                <img class="card-img" src="./Logos/html.png" />
+            <a class="card">
+                <img class="card-img" src="./Logos/react.webp" />
                 <div class="card-info">
                     <span class="card-type">Frontend Frameworks and Libraries</span>
                     <span class="card-title">React</span>
@@ -133,9 +168,9 @@
                     </div>
                     <span class="card-author">Author: Daniel Brown</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/vuejs.jpeg" />
                 <div class="card-info">
                     <span class="card-type">Frontend Frameworks and Libraries</span>
@@ -149,9 +184,9 @@
                     </div>
                     <span class="card-author">Author: Ava Jones</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/nodejs.webp" />
                 <div class="card-info">
                     <span class="card-type">Backend Frameworks and Libraries</span>
@@ -165,9 +200,9 @@
                     </div>
                     <span class="card-author">Author: Michael Kim</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/expressjs.webp" />
                 <div class="card-info">
                     <span class="card-type">Backend Frameworks and Libraries</span>
@@ -181,9 +216,9 @@
                     </div>
                     <span class="card-author">Author: Sophia Rodriguez</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/ruby.jpeg" />
                 <div class="card-info">
                     <span class="card-type">Backend Frameworks and Libraries</span>
@@ -197,9 +232,9 @@
                     </div>
                     <span class="card-author">Author: William Lee</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/django.jpeg" />
                 <div class="card-info">
                     <span class="card-type">Backend Frameworks and Libraries</span>
@@ -213,9 +248,9 @@
                     </div>
                     <span class="card-author">Author: Olivia Martinez</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/flask.webp" />
                 <div class="card-info">
                     <span class="card-type">Backend Frameworks and Libraries</span>
@@ -229,9 +264,9 @@
                     </div>
                     <span class="card-author">Author: Ethan Thompson</span>
                 </div>
-            </div>
-            
-            <div class="card">
+            </a>
+
+            <a class="card">
                 <img class="card-img" src="./Logos/sql.png" />
                 <div class="card-info">
                     <span class="card-type">Databases and APIs</span>
@@ -245,9 +280,9 @@
                     </div>
                     <span class="card-author">Author: Madison Davis</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/nosql.png" />
                 <div class="card-info">
                     <span class="card-type">Databases and APIs</span>
@@ -261,9 +296,9 @@
                     </div>
                     <span class="card-author">Author: Isabella Wilson</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/restapi.jpeg" />
                 <div class="card-info">
                     <span class="card-type">Databases and APIs</span>
@@ -277,9 +312,9 @@
                     </div>
                     <span class="card-author">Author: Jacob Gracia</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/graphql.png" />
                 <div class="card-info">
                     <span class="card-type">Databases and APIs</span>
@@ -293,9 +328,9 @@
                     </div>
                     <span class="card-author">Author: Mia Brown</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/oauth.png" />
                 <div class="card-info">
                     <span class="card-type">Web Development Concepts and T...</span>
@@ -309,9 +344,9 @@
                     </div>
                     <span class="card-author">Author: Evelyn Nguyen</span>
                 </div>
-            </div>
+            </a>
 
-            <div class="card">
+            <a class="card">
                 <img class="card-img" src="./Logos/json.png" />
                 <div class="card-info">
                     <span class="card-type">Web Development Concepts and Technologies</span>
@@ -325,12 +360,30 @@
                     </div>
                     <span class="card-author">Author: Evelyn Nguyen</span>
                 </div>
-            </div>
+            </a>
 
         </div>
     </main>
+    <footer>
+        <span>Developed with
+            <ion-icon class="heart-icon" name="heart"></ion-icon>
+            © 2023
+        </span>
+    </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
 </body>
-
+<script>
+    
+    function toggleDarkMode() {
+        let header = document.getElementById("header")
+        let main = document.getElementById("main")
+        let buttons = document.querySelectorAll("button")
+        console.log(header)
+        header.classList.toggle("black-element")
+        header.classList.toggle("text-white")
+    }
+    
+</script>
 </html>

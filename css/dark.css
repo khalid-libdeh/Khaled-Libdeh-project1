@@ -1,0 +1,14 @@
+.black-element>* {
+    background-color: black !important;
+    color: var(--bg-default) !important;
+
+}
+
+.dark-element {
+    background-color: var(--body-text);
+
+}
+
+.white-text>* {
+    color: var(--bg-default);
+}

@@ -6,4 +6,9 @@
     --lines-color: #DDDDDD;
     --body-text: #333333;
     --heart-color: #DC143C;
+
+}
+
+.bold{
+    font-weight: 700;
 }

@@ -21,7 +21,7 @@
 <body>
     <header id="header">
         <div class="flex-header">
-            <span class="brand-primary normal web-topics">Web Topics</span>
+            <span class="brand-primary normal web-topics web-topics-home">Web Topics</span>
             <div class="header-buttons">
                 <span class="header-title"></span>
                 <button id="dark-button" class="button dark-button" onclick="toggleDarkMode()">
@@ -39,16 +39,16 @@
         <div class="welcome-block">
             <div class="welcome-text">
                 <div class="welcome bold">Welcome to our website!</div>
-                <span>We have a new design that's fresh, modern, and easy</span>
+                <span>We have a new design that's fresh, modern, and easy to use.</span>
             </div>
 
 
         </div>
     </header>
-    <main>
+    <main class="main">
         <div class="search-bar">
             <div class=search-box>
-                <ion-icon name="search-outline"></ion-icon>
+                <ion-icon class="search-icon" name="search-outline"></ion-icon>
                 <input type="text" class="search-input" placeholder="Search the website...">
             </div>
             <div class="sort-filter">
@@ -72,6 +72,7 @@
                 </div>
             </div>
         </div>
+        <div class = found-text bold>"24" Web Topics Found</div>
         <div class="cards-grid">
             <a href="details.html" class="card">
                 <img class="card-img" src="./Logos/html.png" />
@@ -372,18 +373,23 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    
+
 </body>
 <script>
-    
+
     function toggleDarkMode() {
         let header = document.getElementById("header")
-        let main = document.getElementById("main")
+        let main = document.body
         let buttons = document.querySelectorAll("button")
+        let cards = document.getElementsByClassName('card')
         console.log(header)
         header.classList.toggle("black-element")
-        header.classList.toggle("text-white")
+        main.classList.toggle('dark-element')
+        for (let card of cards) {
+            card.classList.toggle("black-element")
+        }
     }
-    
+
 </script>
+
 </html>

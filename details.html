@@ -20,12 +20,12 @@
 <body>
     <header>
         <div class="flex-header">
-            <span class="brand-primary normal web-topics">Web Topics</span>
+            <span class="brand-primary normal web-topics web-topics-details">Web Topics</span>
             <div class="header-buttons">
                 <span class="header-title"></span>
                 <button class="button dark-button">
                     <ion-icon class="button-icon" name="moon-outline"></ion-icon>
-                    <span class="hide-on-mobile">Dark Mode</span>
+                    <span class="hide-on-mobile" onclick="toggleDarkMode()">Dark Mode</span>
                 </button>
 
                 <button class="button favourites-button">
@@ -126,6 +126,22 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+
+        function toggleDarkMode() {
+            let header = document.getElementById("header")
+            let main = document.body
+            let buttons = document.querySelectorAll("button")
+            let cards = document.getElementsByClassName('card')
+            console.log(header)
+            header.classList.toggle("black-element")
+            main.classList.toggle('dark-element')
+            for (let card of cards) {
+                card.classList.toggle("black-element")
+            }
+        }
+    
+    </script>
 </body>
 
 </html>

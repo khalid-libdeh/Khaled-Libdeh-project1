@@ -2,8 +2,7 @@
     display: flex;
     align-items: center;
     background-color: var(--bg-default);
-    height: 80px;
-    width: 100%;
+    height: 70px;
     padding-inline: 4%;
 
 }
@@ -12,16 +11,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
-.web-topics{
-    font-size: 1.5rem;
+.web-topics {
     color: var(--brand-primary);
     font-weight: 700;
 }
 
-.welcome{
-    font-size: 18px;
+.web-topics-details {
+    font-size: 1.5rem;
+}
+
+.web-topics-home {
+    font-size: 1rem;
+
+}
+
+.welcome {
+    font-size: 20px;
 }
 
 .flex-header {
@@ -41,7 +49,7 @@
     height: 30px;
     text-align: center;
     cursor: pointer;
-    width: 2.5rem;
+    width: 3rem;
     font-weight: 400;
 }
 
@@ -65,7 +73,7 @@
     width: 100%;
     background-image:
         /* Top Left triangle*/
-        linear-gradient(to top left, transparent 65%, var(--brand-primary) 50%, var(--brand-primary) 10%),
+        linear-gradient(to top left, transparent 65%, var(--brand-secondary) 10%, var(--brand-primary) 5%),
 
         /* Top Right triangle*/
         linear-gradient(to top right, transparent 65%, var(--brand-secondary) 50%);
@@ -78,11 +86,12 @@
 
 .welcome-text {
     margin-top: 20px;
-    color: var(--brand-secondary)
+
 }
 
 .welcome {
     font-weight: 700 !important;
+    color: var(--brand-secondary)
 }
 
 

@@ -6,9 +6,18 @@ footer{
     width: 100%;
     padding-inline: 4%;
     margin-block: 30px;
+    vertical-align: center;
+    
 }
 
+.footer-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
 .heart-icon{
     color:var(--heart-color);
     size: 3rem 3rem;
+    
 }

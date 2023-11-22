@@ -73,7 +73,7 @@
     width: 100%;
     background-image:
         /* Top Left triangle*/
-        linear-gradient(to top left, transparent 65%, var(--brand-secondary) 10%, var(--brand-primary) 5%),
+        linear-gradient(to top left, transparent 65%, var(--brand-secondary) 20%, var(--brand-primary) 10%),
 
         /* Top Right triangle*/
         linear-gradient(to top right, transparent 65%, var(--brand-secondary) 50%);
@@ -81,7 +81,7 @@
     background-position: top;
     background-color: white;
     /* Width height*/
-    background-repeat: no-repeat;
+   
 }
 
 .welcome-text {

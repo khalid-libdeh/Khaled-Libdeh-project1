@@ -51,7 +51,7 @@ main {
 }
 
 .search-icon {
-    color:var(--body-text);
+    color: var(--body-text);
 }
 
 .search-box {
@@ -146,6 +146,7 @@ main {
 
 .card-title {
     font-weight: 700;
+    height: 50px;
 }
 
 .card-info {
@@ -167,12 +168,11 @@ main {
 .rating-stars {
     display: flex;
     flex-direction: row;
-    padding-top: 30px;
     size: 8rem 8rem;
 }
 
 .star {
-    color: orange !important;
+    color: var(--star-color) !important;
     size: 1rem 1rem;
 }
 

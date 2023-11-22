@@ -154,11 +154,6 @@ main {
     color: var(--lines-color)
 }
 
-.sub-list-container {
-    border: solid 1px yellow;
-
-
-}
 
 .sub-list {
     background-color: var(--bg-default);

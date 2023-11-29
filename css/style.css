@@ -44,8 +44,7 @@ body {
 }
 
 main {
-    display: block;
-    align-items: center;
+
     padding-inline: 3%;
     padding-top: 20px;
 }
@@ -122,8 +121,6 @@ main {
     width: 50%;
     border-left: solid 1px var(--lines-color);
 }
-
-.sort-filter-button {}
 
 .card {
 

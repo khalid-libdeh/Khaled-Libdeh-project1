@@ -45,17 +45,16 @@
     color: var(--brand-primary);
 }
 
+
 .button {
 
-    align-items: center;
     background-color: transparent;
     border-radius: 5px;
     border: solid 1px var(--lines-color);
     height: 30px;
-    text-align: center;
     cursor: pointer;
     width: 3rem;
-    font-weight: 400;
+
 }
 
 
@@ -68,8 +67,7 @@
 }
 
 .welcome-block {
-    justify-content: center;
-    align-items: center;
+
     height: 120px;
     width: 100%;
     background-image:
@@ -99,10 +97,6 @@
 
 @media (min-width: 600px) {
     .button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
         gap: 5px;
     }
 

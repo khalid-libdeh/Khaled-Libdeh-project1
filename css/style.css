@@ -6,9 +6,18 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
+
 a {
     text-decoration: none;
     color: var(--body-text);
+}
+
+.light{
+    font-weight: 200;
+}
+
+.regular{
+    font-weight: 400;
 }
 
 body {
@@ -79,6 +88,9 @@ main {
     width: 100%;
     padding-inline: 15px;
     padding-block: 5px;
+    background-color: transparent;
+    border: 0;
+    height: 100%;
 }
 
 .search-input {
@@ -111,11 +123,7 @@ main {
     border-left: solid 1px var(--lines-color);
 }
 
-.sort-filter-button {
-    background-color: transparent;
-    border: 0;
-    height: 100%;
-}
+.sort-filter-button {}
 
 .card {
 
@@ -147,6 +155,7 @@ main {
 .card-title {
     font-weight: 700;
     height: 50px;
+    overflow: auto;
 }
 
 .card-info {

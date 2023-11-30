@@ -21,7 +21,6 @@
 .flex-header {
     background-color: var(--bg-default);
     height: 70px;
-    padding-inline: 4%;
 }
 
 .web-topics-details {

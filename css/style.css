@@ -12,11 +12,15 @@ a {
     color: var(--body-text);
 }
 
-.light{
+.container{
+    padding-inline: 4%;
+}
+
+.light {
     font-weight: 200;
 }
 
-.regular{
+.regular {
     font-weight: 400;
 }
 
@@ -45,7 +49,6 @@ body {
 
 main {
 
-    padding-inline: 3%;
     padding-top: 20px;
 }
 
@@ -139,11 +142,15 @@ main {
     background-color: var(--bg-default) !important;
 }
 
-.card-type {
-    overflow: hidden;
-    display: inline-block;
+.trim{
     text-overflow: ellipsis;
+    overflow: hidden;
     white-space: nowrap;
+}
+
+.card-type {
+
+    display: inline-block;
     font-size: 14px;
     font-weight: 400;
 

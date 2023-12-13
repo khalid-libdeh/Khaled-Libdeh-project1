@@ -9,11 +9,11 @@ export function renderTopics(topics) {
 
     cardElement = document.createElement("a");
     cardElement.classList.add('card')
-    cardString = `<img class="card-img" src="/Logos/${topic.image}" />
+    cardString = `<img class="card-img" src="./Logos/${topic.image}" />
         <div class="card-info">
             <span class="card-type trim">${topic.category}</span>
             <h4 class="card-title">${topic.topic}</h4>`
-      + fiveStarsRating(topic.rating) +
+      + fiveStarsRating(topic.rating) 
       `<span class="card-author card-author-color">Author: ${topic.name}</span>
         </div>`;
     cardElement.innerHTML = cardString;

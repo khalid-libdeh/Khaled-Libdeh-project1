@@ -241,29 +241,29 @@ select:focus {
     z-index: 1;
 }
 
-.toggle-fav{
+.toggle-fav {
     display: flex;
 }
 
-.fav-card{
+.fav-card {
     width: 150px;
     height: 120px;
     box-shadow: 0 0 5px var(--lines-color);
 }
 
-.fav-card-info{
+.fav-card-info {
     padding-inline: 15px;
 }
 
-.fav-card-img{
+.fav-card-img {
     height: 50%;
 }
 
-.fav-card-title{
+.fav-card-title {
     height: auto;
 }
 
-.fill-star-color{
+.fill-star-color {
     fill: var(--star-color);
 }
 
@@ -273,9 +273,21 @@ select:focus {
     border-top: 16px solid #3498db;
     width: 120px;
     height: 120px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
     animation: spin 2s linear infinite;
-  }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @media(min-width: 768px) {
     .search-bar {
         display: flex;

@@ -4,7 +4,7 @@ let cardString
 let detailsContainer = document.getElementById("details-container")
 let mainContent = document.getElementById("main-content")
 export function renderTopics(topics) {
-  topicsGrid.innerHTML = "Topics Loading";
+  topicsGrid.classList.remove("flex")
   topicsGrid.innerHTML = "";
   topics.forEach((topic) => {
 
@@ -23,7 +23,7 @@ export function renderTopics(topics) {
       window.location.href = 'details.html?id=' + topic.id;
     })
     topicsGrid.append(cardElement);
-    topicsGrid.classList.remove("flex")
+    
   });
 }
 

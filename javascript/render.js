@@ -23,6 +23,7 @@ export function renderTopics(topics) {
       window.location.href = 'details.html?id=' + topic.id;
     })
     topicsGrid.append(cardElement);
+    topicsGrid.classList.remove("flex")
   });
 }
 

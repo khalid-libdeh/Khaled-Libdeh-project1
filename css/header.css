@@ -14,6 +14,10 @@
     justify-content: space-between;
 }
 
+.container {
+    padding-inline: 4%;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -27,7 +31,7 @@
     font-size: 1.5rem;
 }
 
-.card-author-color{
+.card-author-color {
     color: var(--card-author-color);
 }
 
@@ -92,7 +96,43 @@
     color: var(--brand-secondary)
 }
 
+.rating-stars {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 6rem;
+}
 
+.rating-stars-outlined {
+    position: absolute;
+
+}
+
+.star:last-of-type {
+    margin-right: 0;
+}
+
+.star {
+    height: 100%;
+    width: 100%;
+    fill: var(--star-color);
+}
+
+.two-stars {
+    display: inline;
+    position: relative;
+    height: 15px;
+}
+
+.star-outlined {
+    position: absolute;
+    display: none;
+    size: 1rem 1rem !important;
+    color: var(--star-color);
+
+
+}
 
 @media (min-width: 600px) {
     .button {

@@ -15,15 +15,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap"
         rel="stylesheet">
-
+    <script type="module" src="javascript/detailsPage.js" type="text/javascript"></script>
 </head>
 
 <body>
     <header id="header">
-        <div class="flex-header flex align-center justify-space-between">
+        <div class="flex-header flex align-center justify-space-between container">
             <span class="brand-primary-font bold web-topics-details">Web Topics</span>
             <div class="flex header-buttons">
-                <button id="dark-button" class="button dark-button flex align-center justify-center" onclick="toggleDarkMode()">
+                <button id="dark-button" class="button dark-button flex align-center justify-center"
+                    onclick="toggleDarkMode()">
                     <ion-icon class="button-icon" name="moon-outline"></ion-icon>
                     <span class="hide-on-mobile">Dark Mode</span>
                 </button>
@@ -44,10 +45,8 @@
 
         </div>
     </header>
-    <main>
-
-
-        <div class="details-container">
+    <main id="main-content">
+        <div id="details-container" class="details-container">
             <div class="details">
                 <div class="details-type web-">Web Develompent Languages</div>
                 <div class="title">HTML</div>
@@ -81,40 +80,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="sub-list-container">
-            <ul class="sub-list">
-                <li class="sub-list-top sub-item">
-                    HTML Sub Topics
-                </li>
-                <li class="sub-item">
-                    <ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon>
-                    <span>HTML syntax and stucture</span>
-                </li>
-                <li class="sub-item">
-                    <ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon>
-                    <span>HTML elements and attributes</span>
-                </li>
-                <li class="sub-item">
-                    <ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon>
-                    <span>HTML forms and input elements</span>
-                </li>
-                <li class="sub-item">
-                    <ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon>
-                    <span>HTML tables and lists</span>
-                </li>
-                <li class="sub-item">
-                    <ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon>
-                    <span>HTML multimeia elements (audio, video, images)</span>
-                </li>
-                <li class="sub-item">
-                    <ion-icon class="check-icon" name="checkmark-circle-outline"></ion-icon>
-                    <span>HTML accessibilty and semantic markup</span>
-                </li>
-
-            </ul>
-        </div>
-
 
     </main>
     <footer>

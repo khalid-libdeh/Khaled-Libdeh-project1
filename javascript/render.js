@@ -13,7 +13,7 @@ export function renderTopics(topics) {
         <div class="card-info">
             <span class="card-type trim">${topic.category}</span>
             <h4 class="card-title">${topic.topic}</h4>`
-      + fiveStarsRating(topic.rating)
+      + fiveStarsRating(topic.rating) +
         `<span class="card-author card-author-color">Author: ${topic.name}</span>
         </div>`;
     cardElement.innerHTML = cardString;
@@ -103,5 +103,5 @@ export const fiveStarsRating = (value) => {
 }
 
 export function renderFavourites() {
-  
+
 }

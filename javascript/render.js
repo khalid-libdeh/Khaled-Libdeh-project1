@@ -4,6 +4,7 @@ let cardString
 let detailsContainer = document.getElementById("details-container")
 let mainContent = document.getElementById("main-content")
 export function renderTopics(topics) {
+  topicsGrid.innerHTML = "Topics Loading";
   topicsGrid.innerHTML = "";
   topics.forEach((topic) => {
 
@@ -14,7 +15,7 @@ export function renderTopics(topics) {
             <span class="card-type trim">${topic.category}</span>
             <h4 class="card-title">${topic.topic}</h4>`
       + fiveStarsRating(topic.rating) +
-        `<span class="card-author card-author-color">Author: ${topic.name}</span>
+      `<span class="card-author card-author-color">Author: ${topic.name}</span>
         </div>`;
     cardElement.innerHTML = cardString;
     console.log(topic.id)

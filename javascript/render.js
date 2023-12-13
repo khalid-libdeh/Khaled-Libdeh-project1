@@ -13,8 +13,8 @@ export function renderTopics(topics) {
         <div class="card-info">
             <span class="card-type trim">${topic.category}</span>
             <h4 class="card-title">${topic.topic}</h4>`
-      + fiveStarsRating(topic.rating) 
-      `<span class="card-author card-author-color">Author: ${topic.name}</span>
+      + fiveStarsRating(topic.rating)
+        `<span class="card-author card-author-color">Author: ${topic.name}</span>
         </div>`;
     cardElement.innerHTML = cardString;
     console.log(topic.id)
@@ -30,7 +30,7 @@ export const renderDetails = (topic) => {
   let detailsElm = document.createElement("div")
   detailsElm.classList.add("details")
   detailsElm.innerHTML = `<div class="details-type web-">${topic.category}</div>
-    <div class="title">${topic.topic}</div>` +  fiveStarsRating(topic.rating) + `
+    <div class="title">${topic.topic}</div>` + fiveStarsRating(topic.rating) + `
     <p class="description">${topic.description}</p>
 
 `
@@ -100,4 +100,8 @@ export const fiveStarsRating = (value) => {
   }
   rate += "\n" + `<div class='overlay' style=" width: ${100 - percentage}%"/>` + "\n" + `</div> </div>`
   return rate
+}
+
+export function renderFavourites() {
+  
 }

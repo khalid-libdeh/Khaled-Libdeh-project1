@@ -1,11 +1,15 @@
 let topicsGrid = document.getElementById("cards-grid")
+let searchResult = document.getElementById("search-result")
 let cardElement
 let cardString
 let detailsContainer = document.getElementById("details-container")
 let mainContent = document.getElementById("main-content")
+
 export function renderTopics(topics) {
   topicsGrid.classList.remove("flex")
   topicsGrid.innerHTML = "";
+  searchResult.innerText = `"${topics.length}" Web Topics Found`
+  console.log(topics.length)
   topics.forEach((topic) => {
 
     cardElement = document.createElement("a");
@@ -18,7 +22,6 @@ export function renderTopics(topics) {
       `<span class="card-author card-author-color">Author: ${topic.name}</span>
         </div>`;
     cardElement.innerHTML = cardString;
-    console.log(topic.id)
     cardElement.addEventListener("click", () => {
       window.location.href = 'details.html?id=' + topic.id;
     })
@@ -37,7 +40,7 @@ export const renderDetails = (topic) => {
 
 `
   let favCardElm = document.createElement("div")
-  favCardElm.classList.add("fav-card")
+  favCardElm.classList.add("fav-details-card")
   favCardElm.innerHTML = `
   <img class="card-img" src="./Logos/${topic.image}" />
   <div class=card-text>

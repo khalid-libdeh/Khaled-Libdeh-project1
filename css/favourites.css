@@ -1,0 +1,36 @@
+.favourites-container {
+    display: none;
+    padding-inline: 4%;
+    padding-block: 15px;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    background-color: var(--bg-default);
+    height: 180px;
+    width: 1005%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.toggle-fav {
+    display: flex;
+}
+
+.fav-card {
+    width: 150px;
+    height: 120px;
+    box-shadow: 0 0 5px var(--lines-color);
+}
+
+.fav-card-info {
+    padding-inline: 15px;
+}
+
+.fav-card-img {
+    height: 50%;
+}
+
+.fav-card-title {
+    height: auto;
+}

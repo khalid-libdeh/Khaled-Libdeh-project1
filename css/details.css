@@ -75,7 +75,7 @@ main {
 
 }
 
-.fav-card {
+.fav-details-card {
     box-shadow: 0 0 5px var(--lines-color);
     color: var(--body-text);
     width: auto;
@@ -206,7 +206,7 @@ main {
         width: 62%;
     }
 
-    .fav-card {
+    .fav-details-card {
         position: absolute;
         top: 10%;
         left: 60%;

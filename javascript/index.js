@@ -15,7 +15,6 @@ topics = await loadTopics()
 renderTopics(topics)
 onSearch(async (searchValue) => {
     topics = await loadTopics(searchValue);
-    console.log(topics)
     renderTopics(filterTopics(sortTopics(topics, sort), filter))
 });
 

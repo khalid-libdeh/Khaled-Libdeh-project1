@@ -23,7 +23,7 @@ export function renderFavourites(favourites) {
         favCard.innerHTML = `   
         <img class="fav-card-img card-img" src="./Logos/${fav.image}" />
         <div class="fav-card-info">
-            <h4 class="fav-card-title">${fav.topic}</h4>`
+            <h4 class="fav-card-title trim">${fav.topic}</h4>`
             + fiveStarsRating(fav.rating) +
             `
             </div>

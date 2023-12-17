@@ -1,13 +1,14 @@
 //Get topics data from backend
 export async function loadTopics(topicName) {
     try {
-        let response;
-        if (!topicName) {
-            response = await fetch('https://tap-web-1.herokuapp.com/topics/list');
+        const url = new URL('https://tap-web-1.herokuapp.com/topics/list');
+
+        if (topicName) {
+            url.searchParams.append('phrase', topicName);
         }
-        else {
-            response = await fetch('https://tap-web-1.herokuapp.com/topics/list?phrase=' + topicName);
-        }
+
+        const response = await fetch(url.toString());
+
 
         console.log(response.status); // 200
         console.log(response.statusText); // OK
@@ -27,7 +28,7 @@ export async function loadTopics(topicName) {
 export async function loadDetails(id) {
     try {
         const response = await fetch('https://tap-web-1.herokuapp.com/topics/details/' + id);
-        
+
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }

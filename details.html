@@ -16,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap"
         rel="stylesheet">
-    <script type="module" src="javascript/detailsPage.js" type="text/javascript"></script>
+    <script type="module" src="javascript/details/detailsPage.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -72,7 +72,7 @@
                     <span><b>HTML</b> by <a href="#sarah" class="author">Sarah Smith</a></span>
                     <div class="fav-box">
                         <span class="fav-box-top">Intrested about this topic?</span>
-                        <button class="add-fav-button ">
+                        <button id="add-fav-btn" class="add-fav-button ">
                             Add to Favourites
                             <ion-icon class="button-heart-icon" name="heart-outline"></ion-icon>
                         </button>
@@ -110,8 +110,8 @@
     </script>
      <div id="fav-container" class="favourites-container">
         <span class="bold">My Favourite Topics</span>
-        <a href="details.html" class="fav-cards-flex flex ">
-            <div class="fav-card">
+        <div href="details.html" id="fav-flex" class="fav-cards-flex flex ">
+            <a class="fav-card">
                 <img class="fav-card-img card-img" src="./Logos/react.webp" />
                 <div class="fav-card-info">
                     <h4 class="fav-card-title">HTML</h4>
@@ -123,8 +123,8 @@
                         <ion-icon class="fav-star fill-star-color" name="star-outline"></ion-icon>
                     </div>
                 </div>
-            </div>
-        </a>
+            </a>
+        </div>
     </div>
 </body>
 

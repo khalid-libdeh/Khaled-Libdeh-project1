@@ -107,7 +107,7 @@ main {
     display: flex;
     flex-direction: column;
     height: 150px;
-    padding-inline: 20px;
+    padding-inline: 25px;
 }
 
 
@@ -130,13 +130,14 @@ main {
     color: var(--bg-default);
     gap: 10px;
     height: 50px;
-    font-size: 18px;
+    font-size: 17px;
     margin-block: 10px;
+    cursor: pointer;
 }
 
 .button-heart-icon {
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .credit-text {
@@ -192,6 +193,9 @@ main {
     height: 20px;
 }
 
+.remove{
+    font-size: 14px;
+}
 @media(min-width:768px) {
     .details-container {
         position: relative;

@@ -33,7 +33,7 @@
 
                 <button id="fav-btn" class="button favourites-button flex align-center justify-center">
                     <ion-icon class="button-icon" name="heart-outline"></ion-icon>
-                    <span class="hide-on-mobile">Favourites</span>
+                    <span id="fav-btn" class="hide-on-mobile">Favourites</span>
                 </button>
             </div>
         </div>
@@ -102,8 +102,8 @@
 
     <div id="fav-container" class="favourites-container">
         <span class="bold">My Favourite Topics</span>
-        <a href="details.html" class="fav-cards-flex flex ">
-            <div class="fav-card">
+        <div href="details.html" id="fav-flex" class="fav-cards-flex flex ">
+            <a class="fav-card">
                 <img class="fav-card-img card-img" src="./Logos/react.webp" />
                 <div class="fav-card-info">
                     <h4 class="fav-card-title">HTML</h4>
@@ -115,8 +115,8 @@
                         <ion-icon class="fav-star fill-star-color" name="star-outline"></ion-icon>
                     </div>
                 </div>
-            </div>
-        </a>
+            </a>
+        </div>
     </div>
 </body>
 <script>

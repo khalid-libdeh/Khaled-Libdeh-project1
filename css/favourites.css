@@ -7,30 +7,28 @@
     position: fixed;
     background-color: var(--bg-default);
     height: 180px;
-    width: 1005%;
+    width: 100%;
     bottom: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
+    
 }
 
 .toggle-fav {
     display: flex;
 }
 
-.fav-card {
+.fav-card{
     width: 150px;
     height: 120px;
     box-shadow: 0 0 5px var(--lines-color);
+    border-radius: 20px;
+    
 }
 
-.fav-card-info {
-    padding-inline: 15px;
-}
-
-.fav-card-img {
-    height: 50%;
-}
-
-.fav-card-title {
-    height: auto;
+.fav-cards-flex{
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: auto;
 }

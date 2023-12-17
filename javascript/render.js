@@ -1,5 +1,5 @@
 import { fiveStarsRating } from "./renderFav.js"
-
+import { getSearchParam } from "./utility.js"
 let topicsGrid = document.getElementById("cards-grid")
 let searchResult = document.getElementById("search-result")
 let cardElement
@@ -24,9 +24,9 @@ export function renderTopics(topics) {
         </div>`;
     cardElement.innerHTML = cardString;
     cardElement.addEventListener("click", () => {
-      window.location.href = 'details.html?id=' + topic.id;
+      window.location.href = getSearchParam('details.html?', 'id', topic.id)
     })
     topicsGrid.append(cardElement);
-    
+
   });
 }

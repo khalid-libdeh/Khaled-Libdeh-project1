@@ -1,3 +1,5 @@
+import { getSearchParam } from "./utility.js";
+
 let favFlex = document.getElementById("fav-flex")
 
 export function fiveStarsRating(value) {
@@ -27,5 +29,8 @@ export function renderFavourites(favourites) {
             </div>
 `
         favFlex.append(favCard)
+        favCard.addEventListener('click', () => {
+            window.location.href = getSearchParam('details.html?', 'id', fav.id)
+        })
     })
 }

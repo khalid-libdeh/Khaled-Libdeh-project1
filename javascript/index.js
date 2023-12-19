@@ -13,9 +13,9 @@ let favourites =  getLocalStorageValue("favourites") || []
 let filter = "Default"
 let sort = "Default"
 
+onDOMLoad()
 topics = await loadTopics()
 renderTopics(topics)
-onDOMLoad()
 onSearch(async (searchValue) => {
     topics = await loadTopics(searchValue);
     renderTopics(filterTopics(sortTopics(topics, sort), filter))

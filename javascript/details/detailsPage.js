@@ -9,8 +9,8 @@ import { onDarkButtonClick, toggleDarkMode, onDOMLoad } from "../darkMode.js";
 let id = getData("id")
 let topic = {}
 let favourites = getLocalStorageValue("favourites") || []
-topic = await loadDetails(id)
 onDOMLoad()
+topic = await loadDetails(id)
 renderDetails(topic, favourites)
 onFavClick(() => {
     toggleFav()
@@ -24,7 +24,7 @@ onAddFavClick(() => {
 
 })
 
-onDarkButtonClick(()=>{
+onDarkButtonClick(() => {
     toggleDarkMode()
 })
 

@@ -42,3 +42,39 @@
 .fav-card-info{
     padding-inline: 10px;
 }
+
+.rating-stars {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 6rem;
+}
+
+.rating-stars-outlined {
+    position: absolute;
+
+}
+
+.star:last-of-type {
+    margin-right: 0;
+}
+
+.star {
+    height: 1rem;
+    width: 1rem;
+    fill: var(--star-color);
+}
+
+.two-stars {
+    display: inline;
+    position: relative;
+    height: 15px;
+}
+
+.star-outlined {
+    position: absolute;
+    display: none;
+    size: 1rem 1rem !important;
+    color: var(--star-color);
+}

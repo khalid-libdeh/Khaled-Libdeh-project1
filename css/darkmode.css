@@ -13,7 +13,7 @@
 }
 
 .dark-mode .card,
-.dark-mode .search-bar {
+.dark-mode .search-bar,.dark-mode .select-item {
     color: var(--bg-body);
     background-color: #1A1A1A;
     box-shadow: 0 0 5px black;

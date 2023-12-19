@@ -6,11 +6,11 @@
     gap: 10px;
     position: fixed;
     background-color: var(--bg-default);
-    height: 180px;
+    height: 200px;
     width: 100%;
     bottom: 0;
     left: 0;
-    z-index: 2;
+    z-index: 4;
 
 }
 
@@ -32,7 +32,7 @@
     gap: 10px;
     width: 100%;
     flex-wrap: wrap;
-    overflow: auto;
+    overflow-x :auto;
 }
 
 .fav-card-tilte {

@@ -6,9 +6,6 @@ export async function loadTopics(topicName) {
             url.searchParams.append('phrase', topicName);
         }
         const response = await fetch(url.toString());
-
-        console.log(response.status); // 200
-        console.log(response.statusText); // OK
         if (response.status === 200) {
             let data = await response.json();
             return data;
@@ -33,7 +30,6 @@ export async function loadDetails(id) {
         const data = await response.json();
         return data;
     } catch (error) {
-        console.error('Error loading details:', error);
         throw error; // Re-throw the error to handle it elsewhere if needed
     }
 }

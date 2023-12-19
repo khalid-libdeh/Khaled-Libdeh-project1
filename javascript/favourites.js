@@ -26,7 +26,6 @@ export function toggleFavoritesBtn(topic, favourites) {
     if (arrayHasElement(topic,copy)) {
         // Remove from Favorites
         
-        console.log('remove')
         addToFavoritesButton.textContent = 'Add to Favorites';
         return removeFromArray(topic, copy);
     } else {

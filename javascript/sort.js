@@ -8,7 +8,6 @@ export async function onSortChange(cb) {
 
 export function sortTopics(arr, sortBy) {
     if (sortBy === "Default") {
-        console.log(sortBy)
         return arr
     }
     else if (sortBy === "Topic Title") {

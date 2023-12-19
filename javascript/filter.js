@@ -8,7 +8,6 @@ export async function onFilterChange(cb) {
 
 export function filterTopics(arr, filterBy) {
     if (filterBy === "Default") {
-        console.log(filterBy)
         return arr
     }
     else {

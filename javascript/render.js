@@ -10,7 +10,6 @@ export function renderTopics(topics) {
   topicsGrid.classList.remove("flex")
   topicsGrid.innerHTML = "";
   searchResult.innerText = `"${topics.length}" Web Topics Found`
-  console.log(topics.length)
   topics.forEach((topic) => {
 
     cardElement = document.createElement("a");

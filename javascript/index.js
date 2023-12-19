@@ -6,7 +6,7 @@ import { onFilterChange, filterTopics } from "./filter.js";
 import { onFavClick, toggleFav } from "./favourites.js";
 import { getLocalStorageValue } from "./localStorage.js";
 import { renderFavourites } from "./renderFav.js";
-
+import { onDarkButtonClick,toggleDarkMode, onDOMLoad } from "./darkMode.js";
 //creating current topics array
 let topics = []
 let favourites =  getLocalStorageValue("favourites") || []
@@ -15,6 +15,7 @@ let sort = "Default"
 
 topics = await loadTopics()
 renderTopics(topics)
+onDOMLoad()
 onSearch(async (searchValue) => {
     topics = await loadTopics(searchValue);
     renderTopics(filterTopics(sortTopics(topics, sort), filter))
@@ -33,5 +34,9 @@ onSortChange((sortValue) => {
 onFavClick(() => {
     toggleFav()
     renderFavourites(favourites)
+})
+
+onDarkButtonClick(()=>{
+    toggleDarkMode()
 })
 

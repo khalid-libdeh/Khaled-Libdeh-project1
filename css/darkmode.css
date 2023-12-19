@@ -1,0 +1,34 @@
+.dark-mode {
+    background-color: var(--body-text);
+    color: var(--bg-default);
+}
+
+.dark-mode header {
+    background-color: black;
+    color: var(--bg-default)
+}
+
+.dark-mode .white-text {
+    color: var(--bg-default);
+}
+
+.dark-mode .card,
+.dark-mode .search-bar {
+    color: var(--bg-body);
+    background-color: #1A1A1A;
+    box-shadow: 0 0 5px black;
+
+}
+
+.dark-mode .favourites-container,
+.dark-mode .sub-item,
+.dark-mode .sub-list {
+    background-color: #1A1A1A;
+    border: solid 1px black !important;
+    color: (var(--bg-body));
+}
+
+
+.dark-mode .sub-list-container {
+    background-color: #282828;
+}

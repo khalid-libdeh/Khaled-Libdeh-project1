@@ -21,8 +21,10 @@
 .fav-card{
     width: 150px;
     height: 120px;
-    box-shadow: 0 0 5px var(--lines-color);
-    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
     cursor: pointer;
 }
 
@@ -35,4 +37,8 @@
 
 .fav-card-tilte{
     height: 30px;
+}
+
+.fav-card-info{
+    padding-inline: 10px;
 }

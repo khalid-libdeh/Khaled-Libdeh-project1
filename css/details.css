@@ -6,8 +6,8 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.white-text {
-    color: var(--bg-body);
+button{
+    color: var(--body-text);
 }
 
 body {
@@ -80,7 +80,7 @@ main {
     color: var(--body-text);
     width: auto;
     max-width: 300px;
-    height: 400px;
+    max-height: 600px;
     background: var(--bg-default);
 
 }
@@ -215,6 +215,7 @@ main {
         top: 10%;
         left: 60%;
         z-index: 2;
+        
     }
 
     .details-list {

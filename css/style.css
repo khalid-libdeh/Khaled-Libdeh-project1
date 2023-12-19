@@ -8,7 +8,6 @@
 
 a {
     text-decoration: none;
-    color: var(--body-text);
 }
 
 .light {
@@ -158,11 +157,7 @@ select:focus {
     background-color: var(--bg-default) !important;
 }
 
-.trim {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
+
 
 .card-type {
 
@@ -198,7 +193,6 @@ select:focus {
     font-weight: 400;
     color: var(--body-text);
 }
-
 
 
 .overlay {

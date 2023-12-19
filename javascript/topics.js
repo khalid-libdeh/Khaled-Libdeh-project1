@@ -2,13 +2,10 @@
 export async function loadTopics(topicName) {
     try {
         const url = new URL('https://tap-web-1.herokuapp.com/topics/list');
-
         if (topicName) {
             url.searchParams.append('phrase', topicName);
         }
-
         const response = await fetch(url.toString());
-
 
         console.log(response.status); // 200
         console.log(response.statusText); // OK

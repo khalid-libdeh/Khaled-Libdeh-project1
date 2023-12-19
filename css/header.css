@@ -22,8 +22,12 @@
     font-weight: 700;
 }
 
-.flex-header {
+header{
     background-color: var(--bg-default);
+}
+
+.flex-header {
+
     height: 70px;
 }
 
@@ -36,6 +40,7 @@
 }
 
 .web-topics-home {
+    background-color: transparent !important;
     font-size: 1rem;
 
 }
@@ -47,7 +52,6 @@
 .brand-primary-font {
     color: var(--brand-primary);
 }
-
 
 .button {
 
@@ -81,7 +85,6 @@
         linear-gradient(to top right, transparent 65%, var(--brand-secondary) 50%);
     background-size: 100% 100%;
     background-position: top;
-    background-color: white;
     /* Width height*/
 
 }
@@ -130,8 +133,10 @@
     display: none;
     size: 1rem 1rem !important;
     color: var(--star-color);
+}
 
-
+.overlay{
+    background-color: transparent;
 }
 
 @media (min-width: 600px) {
@@ -154,3 +159,4 @@
 
 
 }
+

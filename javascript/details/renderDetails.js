@@ -1,4 +1,4 @@
-import { fiveStarsRating } from "../renderFav.js"
+import { fiveStarsRating } from "../stars.js"
 import { arrayHasElement } from "../utility.js"
 
 let detailsContainer = document.getElementById("details-container")

@@ -194,31 +194,9 @@ select:focus {
     color: var(--body-text);
 }
 
-
-.overlay {
-    
-    height: 100%;
-    overflow: hidden;
-    color: white;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-@supports (mix-blend-mode: color) {
-    .overlay {
-        opacity: unset;
-        mix-blend-mode: screen;
-    }
-
-}
-
-
-
 .card-author {
     margin-top: 15px;
 }
-
 
 
 .fill-star-color {

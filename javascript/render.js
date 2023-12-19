@@ -1,4 +1,4 @@
-import { fiveStarsRating } from "./renderFav.js"
+import { fiveStarsRating } from "./stars.js"
 import { getSearchParam } from "./utility.js"
 let topicsGrid = document.getElementById("cards-grid")
 let searchResult = document.getElementById("search-result")
